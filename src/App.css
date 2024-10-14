@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+:root {
+  --color-primary: #00925d;
+  --color-secondary: #eb3f5e;
+
+  /* Customine variables themes */
+  --variant-textColor: #00925d !important;
+  --variant-outlinedColor: #00925d !important;
+  --variant-outlinedBorder: #00925d80 !important;
+  --variant-containedColor: #fff !important;
+  --variant-containedBg: #00925d !important;
+}
+
+.slick-next {
+  right: 24px;
+}
+
+.slick-next::before {
+  font-size: 28px;
+}
+
+.slick-prev {
+  z-index: 9;
+  left: 16px;
+}
+
+.slick-prev::before {
+  font-size: 28px;
+}

@@ -9,15 +9,12 @@ import theme from "./theme";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
-
-import "./App.css";
 import CreatePost from "./pages/create-post/CreatePost";
 import Detail from "./pages/detail/Detail";
-import Dashboard from "./pages/admin/dashboard/Dashboard";
 import EditPost from "./pages/edit-post/EditPost";
-import Listing from "./pages/listing/Listing";
-import Notification from "./pages/notification/Notification";
 import Profile from "./pages/profile/Profile";
+
+import "./App.css";
 
 function App() {
   const router = createBrowserRouter([
@@ -29,6 +26,26 @@ function App() {
       path: "detail/:slug",
 
       element: <Detail />,
+    },
+    {
+      path: "login",
+      element: <Login />,
+    },
+    {
+      path: "register",
+      element: <Register />,
+    },
+    {
+      path: "create-post",
+      element: <CreatePost />,
+    },
+    {
+      path: "edit-post/:slug",
+      element: <EditPost />,
+    },
+    {
+      path: "profile",
+      element: <Profile />,
     },
   ]);
 
